@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# React Revision 06
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the AccioJob session for react revision
 
-## Available Scripts
+## Topics covered in the session
 
-In the project directory, you can run:
+I have divided the lecture into multiple parts
 
-### `npm start`
+### Part-1
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Basic react hooks revision:
+`useState`, `useEffect` and `useRef`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- what are they
+- how are they used
+- implmentation
 
-### `npm test`
+### Part-2
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Introduction to custom hooks.
 
-### `npm run build`
+- What are they
+- Why are they used
+- Basic Example
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Part-3
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Creating our first hook:
+`useLocalStorageWithExpiry`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Explanation
 
-### `npm run eject`
+This hook is used to store key-value pairs in the browser's local storage that expire after a certain time. It's great for things like session data that should be cleared after the user leaves, even if they didn't manually log out.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Part-4
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Creating our first hook:
+`usePrevious`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Explanation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This hook is used to keep track of the previous value of a state or prop. It can be useful in effects where you want to compare the current props with the previous ones to decide whether to perform an action.
 
-## Learn More
+### Part-5
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Creating our first hook:
+`useOnlineStatus`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Explanation
 
-### Code Splitting
+This hook tracks whether the user is currently online or offline. It can be used to handle things like caching data for offline use, or showing a warning when the user loses their internet connection.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Part-6
 
-### Analyzing the Bundle Size
+Creating our first hook:
+`useIdle`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Explanation
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This hook checks if the user is idle, based on mouse and keyboard activity. It's useful for things like auto-saving or auto-logging out after a certain period of inactivity.
